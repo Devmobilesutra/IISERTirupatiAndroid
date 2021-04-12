@@ -1,0 +1,78 @@
+package com.mobilesutra.iiser_tirupati.Fragment;
+
+
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+
+import com.mobilesutra.iiser_tirupati.Config.IISERApp;
+import com.mobilesutra.iiser_tirupati.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class Fragment_BSMS_Course extends android.support.v4.app.Fragment {
+
+    WebView wbvw_course=null;
+    int position=0;
+    View view=null;
+    private static final String ARG_PARAM_TITLE = "title";
+
+    public static Fragment_BSMS_Course newInstance(String str_title) {
+        IISERApp.log("Fragment_BSMS_Course ", "In newInstance");
+        Fragment_BSMS_Course fragment = new Fragment_BSMS_Course();
+        Bundle bundle = new Bundle();
+        bundle.putString(ARG_PARAM_TITLE, str_title);
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+    public Fragment_BSMS_Course() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        if(view==null) {
+             view = inflater.inflate(R.layout.fragment__bsms__course, container, false);
+
+            getIntentData();
+            initComponents(view);
+            initComponentsListeners();
+            bindComponentData();
+            initComponentData();
+
+        }
+        return view;
+    }
+
+    private void initComponentData() {
+
+
+
+    }
+
+    private void getIntentData() {
+
+    }
+
+    private void initComponents(View view) {
+        wbvw_course= (WebView) view.findViewById(R.id.webview_course);
+    }
+
+    private void initComponentsListeners() {
+    }
+
+    private void bindComponentData() {
+        wbvw_course.getSettings().setJavaScriptEnabled(true);
+        wbvw_course.getSettings().setPluginState(WebSettings.PluginState.ON);
+
+        wbvw_course.loadUrl("file:///android_asset/BSMSProgramme.html".replaceAll(" ", "%20"));
+    }
+}

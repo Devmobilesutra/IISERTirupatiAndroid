@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilesutra.iiser_tirupati.Activities.ActivityOTP">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:text="Verify Mobile Number"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txt_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="OTP has been send to your Mobile Number,Please enter it below."
+            android:textColor="#000"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/ed_txt_otp_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_view1"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text"
+            android:hint="Enter Your OTP Here"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_send_otp_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_txt_otp_no."
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/selected_gray"
+            android:text="Continue"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</ScrollView>

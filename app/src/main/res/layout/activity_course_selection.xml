@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/container_header_img"
+        layout="@layout/activity_header_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <!--  <TextView
+         android:id="@+id/txt_batch_selection"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_margin="@dimen/txt_marginLeft"
+         android:gravity="center_horizontal"
+         android:text="Batch Selection for Semester VI"
+         android:textColor="@color/edittext_textcolor"
+         android:textSize="@dimen/edittxt_textsize"
+         android:textStyle="bold" />
+
+ iiser_tirupati_tirupatiiser.view.RadioButtonTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/radiogrp_batch"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TableRow
+             android:id="@+id/tblrw_1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/txt_marginLeft"
+             android:layout_marginRight="@dimen/txt_marginLeft"
+             android:weightSum="2">
+
+             <RadioButton
+                 android:id="@+id/radiobtn1"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text="B1" />
+
+             <RadioButton
+                 android:id="@+id/radiobtn2"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text="B2" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/txt_marginLeft"
+             android:layout_marginRight="@dimen/txt_marginLeft"
+             android:weightSum="2">
+
+             <RadioButton
+                 android:id="@+id/radiobtn3"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text="B3" />
+
+             <RadioButton
+                 android:id="@+id/radiobtn4"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text="B4"></RadioButton>
+         </TableRow>
+
+   iiser_tirupati_tirupatiiser.view.RadioButtonTabLayout>-->
+
+    <TextView
+        android:id="@+id/txt_course_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_header_img"
+        android:layout_gravity=""
+        android:layout_margin="@dimen/txt_marginLeft"
+        android:gravity="center_horizontal"
+        android:text="Courses Selection"
+        android:textColor="@color/edittext_textcolor"
+        android:textSize="@dimen/edittxt_textsize"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_alignLeft="@+id/txt_course_selection"
+        android:layout_alignStart="@+id/txt_course_selection"
+        android:layout_below="@+id/txt_course_selection"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="5dp"
+
+        android:layout_above="@+id/btn_course_apply">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- <TextView
+                 android:id="@+id/txt_sub_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text=""
+                 android:layout_margin="@dimen/txt_marginLeft"
+                 android:textColor="@color/edittext_textcolor"
+                 android:textSize="@dimen/edittxt_textsize"
+                 android:textStyle="bold"/>-->
+            <LinearLayout
+                android:id="@+id/lnrlayout_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    style="@style/chkbx_course"
+                    android:text="" />
+
+                <CheckBox
+                    style="@style/chkbx_course"
+                    android:text="" />
+            </LinearLayout>-->
+
+            <!-- <LinearLayout
+                  android:id="@+id/lnrlayout_chkrw"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <CheckBox
+                      style="@style/chkbx_course"
+                      android:text="BIO 323" />
+
+                  <CheckBox
+                      style="@style/chkbx_course"
+                      android:text="BIO 351" />
+              </LinearLayout>
+
+              <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="CHM 310" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="CHM 321" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="CHM 322" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="CHM 323" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="MTH 320" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="MTH 321" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="MTH 322" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="MTH 323" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="PHY 320" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="PHY 321" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="PHY 322" />
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="ECS 311" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <CheckBox
+                       style="@style/chkbx_course"
+                       android:text="ECS 321" />
+               </LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_course_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/edittext_txtcolor_white"
+        android:gravity="center"
+        android:text="Apply"
+        android:textColor="@color/edittext_textcolor"
+        android:backgroundTint="#4bc9ec"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

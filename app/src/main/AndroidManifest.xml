@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobilesutra.iiser_tirupati">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+    <!--
+        <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+    -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_CALENDAR" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_CALENDAR" />
+    <!--
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" />
+    <!--
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE"
+        android:required="false" />
+    <uses-permission android:name="com.mobilesutra.iiser.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.mobilesutra.iiser_tirupati.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    -->
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:name=".Config.IISERApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ActivityAttendenceFaculty"></activity>
+        <activity android:name=".Activities.ActivityAttendence" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activities.ActivityTabHost"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".background.IISERIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Config.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="com.mobilesutra.iiser" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.ActivityCourses"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityAboutUs"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityFacultyProfile"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.ActivityIconTabs_Header"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityAdmissionProcess"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityEvents"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityLogin"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityRegistration"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityCourseSelection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityNotice"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityExamSchedule"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityAssignment"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityTimeTable"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityProfile"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.ActivityTabHost_AfterLogin"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityTabHst_AftrLogin1"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityHome"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activities.ActivityPDFReader"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityHomeProfile"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityEventDetails"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityTabHeaderFooter"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.ActivityAssignmntDetails"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityCourseDetails"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityAdmissionDetails"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityExamScheduleDetails"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Error_Activity.ErrorActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.ActivityAddAssignment"
+            android:label="@string/app_name" />
+        <activity android:name=".Activities.ActivityAssignImage" />
+        <activity android:name=".Activities.ActivityOTP" />
+        <activity android:name=".Activities.ActivityNewPassword" />
+        <activity android:name=".Activities.ActivityMobileNo" /> <!-- Firebase Notifications -->
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity android:name=".Activities.EventPdf" />
+        <activity android:name=".Activities.Notice_pdf" />
+    </application>
+
+</manifest>

@@ -1,0 +1,245 @@
+package com.mobilesutra.iiser.Activities;
+
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.mobilesutra.iiser.Config.IISERApp;
+import com.mobilesutra.iiser.Database.TABLE_USER_PROFILE;
+import com.mobilesutra.iiser.R;
+import com.mobilesutra.iiser.background.IISERIntentService;
+
+import java.util.ArrayList;
+
+/**
+ * Created by kalyani on 22/04/2016.
+ */
+public class ActivityLogin extends Activity {
+
+    TextView txt_sign_up = null;
+    CheckBox chk_shw_password = null;
+    Button btn_login = null;
+    EditText edtxt_username = null, edtxt_password = null;
+    ProgressBar prgresbar = null;
+    ProgressDialog dialog = null;
+
+    Context context = null;
+    Intent intent = null;
+    String LOG_TAG = "ActivityLogin", str_username = null, str_password = null;
+    ArrayList<String> userdetails = new ArrayList<String>();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //  Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
+        setContentView(R.layout.fragment_six);
+
+        context = this;
+        getIntentData();
+        initComponents();
+        initComponentsListeners();
+        bindComponentData();
+    }
+
+    private void getIntentData() {
+    }
+
+    private void initComponents() {
+        //  txt_sign_up = (TextView) findViewById(R.id.txt_new_login);
+        btn_login = (Button) findViewById(R.id.btn_login);
+        chk_shw_password = (CheckBox) findViewById(R.id.chkbx_remembr_me);
+        prgresbar = (ProgressBar) findViewById(R.id.progressbar);
+
+        edtxt_username = (EditText) findViewById(R.id.edtxt_username);
+        edtxt_password = (EditText) findViewById(R.id.edtxt_password);
+
+
+    }
+
+    private void initComponentsListeners() {
+        chk_shw_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (buttonView.isChecked()) {
+                    //Toast.makeText(firstpage.this, " No internet connection", Toast.LENGTH_SHORT).show();
+
+                    edtxt_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    edtxt_password.setSelection(edtxt_password.getText().length());
+                    // hide password
+                } else {
+                    edtxt_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    int pos = edtxt_password.getText().length();
+                    edtxt_password.setSelection(pos);
+                }
+
+            }
+        });
+
+        btn_login.setOnClickListener
+                (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                str_username = edtxt_username.getText().toString();
+                str_password = edtxt_password.getText().toString();
+
+                IISERApp.set_session(IISERApp.SESSION_USERNAME, str_username);
+                IISERApp.set_session(IISERApp.SESSION_PASSWORD, str_password);
+
+
+                call_LoginServices();
+
+            }
+
+
+        });
+
+
+       /* txt_sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(Vaiew v) {
+                intent=new Intent(context,ActivityRegistration.class);
+                startActivity(intent);
+               // finish();
+            }
+        });*/
+    }
+
+    private void bindComponentData() {
+        prgresbar.setVisibility(View.GONE);
+        userdetails = TABLE_USER_PROFILE.getusername_password();
+        IISERApp.log(LOG_TAG, "Userdetails:" + userdetails);
+        if (userdetails.isEmpty()) {
+
+        } else {
+            edtxt_username.setText(userdetails.get(0).toString());
+            edtxt_password.setText(userdetails.get(1).toString());
+            //edtxt_username.setEnabled(false);
+            //edtxt_password.setEnabled(false);
+        }
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        IISERApp.log(LOG_TAG, "ondestroy");
+        context.registerReceiver(mMessageReceiver, new IntentFilter(LOG_TAG));
+        context.unregisterReceiver(mMessageReceiver);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        IISERApp.log(LOG_TAG, "Awak onresume-->");
+        context.registerReceiver(mMessageReceiver, new IntentFilter(LOG_TAG));
+
+    }
+
+    private final BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            IISERApp.log(LOG_TAG, "messege recieved");
+            Bundle bundle = intent.getExtras();
+            IISERApp.log_bundle(bundle);
+            if(bundle != null)
+            {
+
+                if (bundle.getString(IISERApp.BUNDLE_RESPONSE_CODE).equalsIgnoreCase("200")) {
+                    // prgresbar.setVisibility(View.GONE);
+
+                    if (bundle.getString(IISERApp.BUNDLE_RESPONSE_STATUS).equalsIgnoreCase("1")) {
+
+                        IISERApp.log(LOG_TAG, "in if condition of response stastus 1");
+                        //dialog.setMessage(bundle.getString(IISERApp.BUNDLE_RESPONSE_MESSAGE));
+                        if (dialog!= null && dialog.isShowing()) {
+                            dialog.dismiss();
+                            IISERApp.log(LOG_TAG, "in if condition of response stastus 1 if dialog showing..");
+                            // Snackbar.make(btn_login, bundle.getString(IISERApp.BUNDLE_RESPONSE_MESSAGE), Snackbar.LENGTH_LONG).show();
+
+                            IISERApp.set_session(IISERApp.SESSION_LOGIN_FLAG, "Y");
+                            Intent intent1 = new Intent(context, ActivityTabHost_AfterLogin.class);
+                            startActivity(intent1);
+                            finish();
+                        }
+                    } else if (bundle.getString(IISERApp.BUNDLE_RESPONSE_STATUS).equalsIgnoreCase("0")) {
+                        if (dialog!= null && dialog.isShowing()) {
+                            // dialog.setMessage(bundle.getString(IISERApp.BUNDLE_RESPONSE_MESSAGE));
+                            dialog.dismiss();
+                        }
+                        Snackbar.make(btn_login, bundle.getString(IISERApp.BUNDLE_RESPONSE_MESSAGE), Snackbar.LENGTH_LONG).show();
+
+                    } else {
+                        dialog.setMessage(bundle.getString(IISERApp.BUNDLE_RESPONSE_MESSAGE));
+                    }
+
+
+                } else
+                {
+                    // prgresbar.setVisibility(View.GONE);
+                    if (dialog!= null && dialog.isShowing())
+                        dialog.dismiss();
+                    Snackbar.make(btn_login, bundle.getString(IISERApp.BUNDLE_EXCEPTION), Snackbar.LENGTH_LONG).show();
+
+
+                }
+            }
+
+        }
+    };
+
+
+
+    public  void call_LoginServices()
+    {
+        if (userdetails.isEmpty()) {
+            if (!str_username.equals("") && !str_password.equals("")) {
+                if (((IISERApp) getApplication()).isInternetAvailable()) {
+                    Intent intent1 = new Intent(Intent.ACTION_SYNC, null, context, IISERIntentService.class);
+                    intent1.putExtra(IISERApp.INTENT_FLAG, IISERApp.INTENT_FLAG_LOGIN);
+                    //  prgresbar.setVisibility(View.VISIBLE);
+                    dialog = ProgressDialog.show(context, "IISER", "Please Wait... Checking Login Credentials");
+                    context.startService(intent1);
+
+
+                } else {
+                    Snackbar.make(btn_login, "No Internet available...", Snackbar.LENGTH_LONG).show();
+                }
+            } else {
+                Snackbar.make(btn_login, "Username or Password is empty...", Snackbar.LENGTH_LONG).show();
+            }
+
+        } else
+        {
+            if ((userdetails.get(0).toString()).equals(str_username) &&
+                    (userdetails.get(1).toString()).equals(str_password)) {
+                IISERApp.set_session(IISERApp.SESSION_LOGIN_FLAG, "N");
+                intent = new Intent(context, ActivityTabHost_AfterLogin.class);
+                startActivity(intent);
+                // Toast.makeText(ActivityLogin.this, "User Logged In Successfully ...", Toast.LENGTH_SHORT).show();
+                finish();
+
+                // Toast.makeText(ActivityLogin.this, "User Logged In Successfully ...", Toast.LENGTH_SHORT).show();
+            }
+            else
+                Snackbar.make(btn_login, "You are not authorised to login from this device.", Snackbar.LENGTH_LONG).show();
+
+        }
+    }
+}

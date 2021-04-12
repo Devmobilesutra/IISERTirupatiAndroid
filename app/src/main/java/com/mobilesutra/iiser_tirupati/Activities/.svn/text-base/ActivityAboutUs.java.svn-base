@@ -1,0 +1,203 @@
+package com.mobilesutra.iiser.Activities;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.view.View;
+import android.widget.ScrollView;
+import android.widget.TextView;
+
+import com.mobilesutra.iiser.Config.IISERApp;
+import com.mobilesutra.iiser.Error_Activity.ExceptionHandler;
+import com.mobilesutra.iiser.R;
+import com.mobilesutra.iiser.banner.Animations.DescriptionAnimation;
+import com.mobilesutra.iiser.banner.SliderLayout;
+import com.mobilesutra.iiser.banner.SliderTypes.BaseSliderView;
+import com.mobilesutra.iiser.banner.SliderTypes.TextSliderView;
+import com.mobilesutra.iiser.banner.Tricks.ViewPagerEx;
+
+/**
+ * Created by kalyani on 22/04/2016.
+ */
+
+
+public class ActivityAboutUs extends Activity implements BaseSliderView.OnSliderClickListener,
+        ViewPagerEx.OnPageChangeListener {
+
+    private static final String ARG_PARAM_TITLE = "title",LOG_TAG = "FragmentTwo";
+    Context context = null;
+    SliderLayout mDemoSlider = null;
+    TextView add_process=null;
+    TextView user_name=null;
+
+   // TextView user_type1=null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
+        setContentView(R.layout.fragment_one);
+        context = this;
+        getIntentData();
+        initComponents();
+        initComponentsListeners();
+        displayBanner();
+        bindComponentData();
+        initComponentData();
+        final ScrollView main = (ScrollView) findViewById(R.id.scrollView123);
+        main.post(new Runnable() {
+            public void run() {
+                main.scrollTo(0, 0);
+            }
+        });
+    }
+
+    private void initComponentData() {
+        add_process=(TextView)findViewById(R.id.add_process);
+        add_process.setVisibility(View.GONE);
+       // user_type=(TextView)findViewById(R.id.user_type);
+
+      /*if((IISERApp.get_session(IISERApp.SESSION_LOGIN_FLAG).equalsIgnoreCase("Y")))
+        {
+            String user = IISERApp.get_session((IISERApp.SESSION_USERNAME ));
+            String sem = IISERApp.get_session((IISERApp.SESSION_SEMESTER_NAME ));
+            user_type.setText(user + sem);
+        }else
+      {
+          user_type.setVisibility(View.GONE);
+      }*/
+        user_name=(TextView)findViewById(R.id.user_name);
+        IISERApp.log(LOG_TAG,"session value is"+IISERApp.get_session(IISERApp.SESSION_LOGIN_FLAG));
+        if((IISERApp.get_session(IISERApp.SESSION_LOGIN_FLAG).equalsIgnoreCase("Y"))) {
+
+            String user = IISERApp.get_session((IISERApp.SESSION_STUDENT_NAME));
+            String sem_name = IISERApp.get_session((IISERApp.SESSION_SEMESTER_NAME));
+
+            // String sem = IISERApp.get_session((IISERApp.SESSION_SEMESTER_NAME ));
+
+            //user_name.setText(user);
+            if (IISERApp.get_session(IISERApp.SESSION_USER_TYPE).equalsIgnoreCase("student"))
+            {
+                user_name.setText(user + " (sem- " + sem_name + ")");
+            }
+            else  if (IISERApp.get_session(IISERApp.SESSION_USER_TYPE).equalsIgnoreCase("faculty"))
+            {
+                user_name.setText(user + " (" + "Faculty" +")");
+            }
+            else  if (IISERApp.get_session(IISERApp.SESSION_USER_TYPE).equalsIgnoreCase("supervisor"))
+            {
+                user_name.setText(user + " (" + "Invigilator" +")");
+            }
+        }
+        else
+        {
+            user_name.setVisibility(View.GONE);
+        }
+    }
+
+    private void getIntentData() {
+    }
+
+    private void initComponents() {
+    }
+
+    private void initComponentsListeners() {
+    }
+
+    private void bindComponentData() {
+    }
+
+    public void displayBanner() {
+        //final ViewFlipper MyViewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
+
+        mDemoSlider = (SliderLayout)findViewById(R.id.sample_output);
+        mDemoSlider.setFocusable(true);
+        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Default);
+        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
+        mDemoSlider.setDuration(3000);
+        mDemoSlider.addOnPageChangeListener(this);
+
+       /* LinkedHashMap<String, String> lhm = ShopApp.db.getFrontBanner();
+        int length = lhm.size();
+        if (length == 0) {*/
+        int bannerArray[] = {R.drawable.banner, R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
+
+        for (int i = 0; i < 4; i++) {
+
+            TextSliderView textSliderView = new TextSliderView(context);
+            // initialize a SliderLayout
+            textSliderView
+                    .description("")
+                    .image(bannerArray[i])
+                    .setScaleType(BaseSliderView.ScaleType.CenterCrop)
+                    .setOnSliderClickListener(this);
+
+            //add your extra information
+            textSliderView.bundle(new Bundle());
+            textSliderView.getBundle()
+                    .putString("extra", "");
+            mDemoSlider.addSlider(textSliderView);
+        }
+       /* } else {*/
+
+          /*  Set<String> keys = lhm.keySet();
+            for (String key : keys) {
+                TextSliderView textSliderView = new TextSliderView(getContext());
+                // initialize a SliderLayout
+                textSliderView
+                        .description("")
+                        .image(lhm.get(key))
+                        .setScaleType(BaseSliderView.ScaleType.CenterInside)
+                        .setOnSliderClickListener(this);
+
+                //add your extra information
+                textSliderView.bundle(new Bundle());
+                textSliderView.getBundle()
+                        .putString("extra", key);
+
+                mDemoSlider.addSlider(textSliderView);
+            }*/
+          /*  for (int i = 0; i < length; i++) {
+
+                TextSliderView textSliderView = new TextSliderView(this);
+                // initialize a SliderLayout
+                textSliderView
+                        .description("")
+                        .image(lhm.get("" + i))
+                        .setScaleType(BaseSliderView.ScaleType.FitCenterCrop)
+                        .setOnSliderClickListener(this);
+
+                //add your extra information
+                textSliderView.bundle(new Bundle());
+                textSliderView.getBundle()
+                        .putString("extra", lhm.get("" + i));
+
+                mDemoSlider.addSlider(textSliderView);
+            }*/
+        // }
+
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+
+    @Override
+    public void onSliderClick(BaseSliderView slider) {
+
+    }
+}

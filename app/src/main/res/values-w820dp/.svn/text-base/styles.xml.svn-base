@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Login_edittext">
+        <item name="android:background">@color/edittext_background</item>
+        <item name="android:textColor">@color/edittext_textcolor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/edittxt_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/edittxt_marginLeft</item>
+        <item name="android:layout_marginBottom">@dimen/edittxt_marginBottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">@color/edittext_hintcolor</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/edittxt_textsize</item>
+    </style>
+
+    <style name="txt_login">
+        <item name="android:textColor">@color/edittext_textcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/edittxt_textsize</item>
+    </style>
+    <style name="txt_about_us">
+        <item name="android:textColor">@color/edittext_txtcolor_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/edittxt_marginBottom</item>
+        <item name="android:layout_marginRight">@dimen/edittxt_marginBottom</item>
+        <item name="android:layout_marginBottom">@dimen/edittxt_marginBottom</item>
+        <item name="android:textSize">@dimen/edittxt_textsize</item>
+    </style>
+
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_background</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:textColorPrimary">@color/selected_gray</item>
+    </style>
+
+</resources>

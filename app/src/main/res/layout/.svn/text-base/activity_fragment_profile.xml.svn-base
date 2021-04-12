@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme.Dark">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView123"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+          <!--  <android.support.design.widget.FloatingActionButton
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/autorenew"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:fabSize="normal"
+                />-->
+
+           <!-- <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:layout_gravity="right"
+                android:src="@drawable/power"
+                />
+
+-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/txt_marginLeft"
+                android:src="@drawable/power"
+                custom:fabSize="normal" />
+            <ImageView
+                android:id="@+id/img_profile_photo"
+                android:layout_width="@dimen/txt_profile_label_width"
+                android:layout_height="@dimen/txt_profile_label_width"
+                android:layout_gravity="center"
+                android:src="@drawable/center_app_img" />
+
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_gravity="right" />-->
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_name"
+                    style="@style/txt_profile_label"
+                    android:text="Name" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+
+                    android:hint="Enter Your Name"
+                    android:id="@+id/edtxt_name"
+                    style="@style/edttxt_profile_value"
+                    android:text="Amit Putta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_email_id"
+                    style="@style/txt_profile_label"
+                    android:text="Email Id" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:hint="Enter Your Email-id"
+                    android:id="@+id/edtxt_email_id"
+                    style="@style/edttxt_profile_value"
+                    android:inputType="textEmailAddress"
+                    android:text="amitputta@gmail.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_mobile_no"
+                    style="@style/txt_profile_label"
+                    android:text="Mobile No" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_mobile_no"
+                    android:hint="Enter Your Mobile No"
+                    style="@style/edttxt_profile_value"
+                    android:inputType="phone"
+                    android:text="9898674565"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_username"
+                    style="@style/txt_profile_label"
+                    android:text="Username" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_username"
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="amit_putta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_password"
+                    style="@style/txt_profile_label"
+                    android:text="Password" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:hint="Enter Password"
+                    android:id="@+id/edtxt_password"
+                    style="@style/edttxt_profile_value"
+                    android:text="amit_putta123" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_roll_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_roll_no"
+                    style="@style/txt_profile_label"
+                    android:text="Roll No" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_roll_no"
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="123" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_semester_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_semester_name"
+                    style="@style/txt_profile_label"
+                    android:text="Semester" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+               <!-- <EditText
+                    android:hint="Enter Semester"
+                    android:id="@+id/edtxt_semester_name"
+                    style="@style/edttxt_profile_value"
+                    android:text="" />-->
+                <Spinner
+                    android:hint="Enter Semester"
+                    android:id="@+id/edtxt_semester_name"
+                    style="@style/edttxt_profile_value"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_degree"
+                    style="@style/txt_profile_label"
+                    android:text="Degree" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_degree"
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="PhD" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_designation"
+                    style="@style/txt_profile_label"
+                    android:text="Designation" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_designation"
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="Assosiate professor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_research"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_research"
+                    style="@style/txt_profile_label"
+                    android:text="Research" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    android:id="@+id/edtxt_research"
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="Neural circuits and behaviour; Olfaction" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_batch_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/txt_marginLeft"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/edittext_textcolor"
+                android:textSize="@dimen/edittxt_textsize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_batch_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/tblrw_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/txt_marginLeft"
+                    android:layout_marginRight="@dimen/txt_marginLeft"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="B1" />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="B2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tblrw_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/txt_marginLeft"
+                    android:layout_marginRight="@dimen/txt_marginLeft"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/radiobtn3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="B3" />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="B4"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/edittxt_marginLeft"
+                android:layout_marginRight="@dimen/edittxt_marginLeft"
+                android:layout_marginTop="@dimen/txt_marginLeft"
+                android:background="@color/edittext_txtcolor_white"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@color/edittext_textcolor" />
+            <TextView
+           android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/txt_marginLeft"
+                android:src="@drawable/img_plus"
+                custom:fabSize="normal" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

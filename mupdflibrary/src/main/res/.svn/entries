@@ -1,0 +1,148 @@
+10
+
+dir
+137
+https://ms-server-pc:8443/svn/IISERPUNE-Android/trunk/IISERPUNE/mupdflibrary/src/main/res
+https://ms-server-pc:8443/svn/IISERPUNE-Android
+
+
+
+2016-06-06T13:36:06.978369Z
+126
+kalyani
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f129ab43-7bc1-6348-9a96-5d3ba1ba1012
+
+animator
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+drawable-xxhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-ar
+dir
+
+values-ca
+dir
+
+values-cs
+dir
+
+values-da
+dir
+
+values-de
+dir
+
+values-el
+dir
+
+values-es
+dir
+
+values-et
+dir
+
+values-fi
+dir
+
+values-fr
+dir
+
+values-hi
+dir
+
+values-hu
+dir
+
+values-in
+dir
+
+values-it
+dir
+
+values-iw
+dir
+
+values-ja
+dir
+
+values-ko
+dir
+
+values-lt
+dir
+
+values-ms
+dir
+
+values-nl
+dir
+
+values-no
+dir
+
+values-pl
+dir
+
+values-pt
+dir
+
+values-ru
+dir
+
+values-sk
+dir
+
+values-sv
+dir
+
+values-th
+dir
+
+values-tl
+dir
+
+values-tr
+dir
+
+values-zh
+dir
+
+values-zh-rTW
+dir
+

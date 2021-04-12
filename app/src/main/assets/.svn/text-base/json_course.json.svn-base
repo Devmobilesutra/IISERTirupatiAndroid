@@ -1,0 +1,837 @@
+{
+  "course_data": [
+    {
+      "Code":"BIO312",
+      "Name":"Animal Physiology I ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO321",
+      "Name":"Plant Biology I ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO323",
+      "Name":"Immunology I ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO412",
+      "Name":"Microbiology ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO417",
+      "Name":"Advanced Biochemistry  II",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO422",
+      "Name":"Evolution ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO423",
+      "Name":"Ecology II",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO312",
+      "Name":"Animal Physiology I ",
+      "Credit":4,
+      "Semister":" VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO321",
+      "Name":"Plant Biology I ",
+      "Credit":4,
+      "Semister":" VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO323",
+      "Name":"Immunology I ",
+      "Credit":4,
+      "Semister":" VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO412",
+      "Name":"Microbiology ",
+      "Credit":4,
+      "Semister":" VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO417",
+      "Name":"Advanced Biochemistry  II",
+      "Credit":4,
+      "Semister":" VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO422",
+      "Name":"Evolution ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO423",
+      "Name":"Ecology II",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO302",
+      "Name":"Lab Training/Theory Project ",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO402",
+      "Name":"Lab Training/Theory Project ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO435",
+      "Name":"Biophysics II",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO442",
+      "Name":"Computational Biology",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO335",
+      "Name":"Animal Behaviour",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO413/MTH427",
+      "Name":"Mathematical  Biology",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO435",
+      "Name":"Biophysics II",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO442",
+      "Name":"Computational Biology",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO335",
+      "Name":"Animal Behaviour",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO413/MTH427",
+      "Name":"Mathematical  Biology",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO420",
+      "Name":"Developmental Biology",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO351",
+      "Name":"Biology and Disease",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"BIO491",
+      "Name":"Literature Review ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"CHM310",
+      "Name":"Quantum Chemistry ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM321",
+      "Name":"Organic Synthesis-I ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM322",
+      "Name":"Transition metal Chemistry ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM310",
+      "Name":"Quantum Chemistry ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM321",
+      "Name":"Organic Synthesis-I ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM322",
+      "Name":"Transition metal Chemistry ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM302",
+      "Name":"Lab Training/Theory Project  ",
+      "Credit":3,
+      "Semister":"VI",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM323",
+      "Name":"Fundamentals of Molecular Spectroscopy",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM334",
+      "Name":"Physical Chemistry of Solutions ",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM351",
+      "Name":"Bioorganic Chemistry ",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM323",
+      "Name":"Fundamentals of Molecular Spectroscopy",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM334",
+      "Name":"Physical Chemistry of Solutions ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM351",
+      "Name":"Bioorganic Chemistry ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM360",
+      "Name":"Advanced Inorganic Chemistry Lab ",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM420",
+      "Name":"Structural Methods and Analysis ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM421",
+      "Name":"Polymer Chemistry ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM422",
+      "Name":"Statistical Thermodynamics ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM423",
+      "Name":"Medicinal Chemistry ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM402",
+      "Name":"Lab Training/Theory Project  ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM433",
+      "Name":"Photochemistry ",
+      "Credit":3,
+      "Semister":"     VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM441",
+      "Name":"Advanced Material Science",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"CHM442",
+      "Name":"Organometallic Chemistry",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"MTH320",
+      "Name":"Vector Spaces, Rings and Modules ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH326",
+      "Name":"Complex Analysis",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH327",
+      "Name":"Calculus on Manifolds",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH323",
+      "Name":"Graph Theory ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH328",
+      "Name":"Coding Theory",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH343",
+      "Name":"Topics in Discrete Mathematics: Set Theory and Mathematical Logic",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH320",
+      "Name":"Vector Spaces, Rings and Modules ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH326",
+      "Name":"Complex Analysis",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH327",
+      "Name":"Calculus on Manifolds",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH323",
+      "Name":"Graph Theory ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH328",
+      "Name":"Coding Theory",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH343",
+      "Name":"Topics in Discrete Mathematics: Set Theory and Mathematical Logic",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH420",
+      "Name":"Algebraic number theory ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH423",
+      "Name":"Commutative Algebra",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH411",
+      "Name":"Functional Analysis",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH416",
+      "Name":"Stochastic Processes",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH425",
+      "Name":"Differential Geometry",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH424",
+      "Name":"Partial Differential Equations",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH302",
+      "Name":"Reading Project",
+      "Credit":3,
+      "Semister":"VI",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"MTH402",
+      "Name":"Reading Project",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"PHY320",
+      "Name":"Physics Lab V ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY322",
+      "Name":"Statistical Mechanics I ",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY324",
+      "Name":"Quantum Mechanics II",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY341",
+      "Name":"Physics at Nano Scale",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY342",
+      "Name":"Nonlinear Dynamics",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY361",
+      "Name":"Quantum Information",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY320",
+      "Name":"Physics Lab V ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY322",
+      "Name":"Statistical Mechanics I ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY324",
+      "Name":"Quantum Mechanics II",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY341",
+      "Name":"Physics at Nano Scale",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY342",
+      "Name":"Nonlinear Dynamics",
+      "Credit":3,
+      "Semister":"VIII ",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY361",
+      "Name":"Quantum Information",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY302",
+      "Name":"Lab training/Theory Project ",
+      "Credit":3,
+      "Semister":"VI",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY420",
+      "Name":"Atomic and Molecular Physics ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY421",
+      "Name":"Classical and Quantum Optics ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY422",
+      "Name":"Nuclear and Particle Physics ",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY430",
+      "Name":"Physics Lab VII ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY461",
+      "Name":"Quantum Field Theory",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY463",
+      "Name":"Advanced condensed Matter Physics",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY464",
+      "Name":"Astrophysical Processes",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY402",
+      "Name":"Lab training/Theory Project ",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"ECS321",
+      "Name":"Weather and Climate",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS322",
+      "Name":"Landscapes and earth surface processes",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS323",
+      "Name":"Seismology: Theory and Application",
+      "Credit":4,
+      "Semister":"VI ",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS321",
+      "Name":"Weather and Climate",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS322",
+      "Name":"Landscapes and earth surface processes",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS323",
+      "Name":"Seismology: Theory and Application",
+      "Credit":4,
+      "Semister":"VIII",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS302",
+      "Name":"Lab training/Theory Project",
+      "Credit":3,
+      "Semister":"VI",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"ECS402",
+      "Name":"Lab training/Theory Project",
+      "Credit":3,
+      "Semister":"VII",
+      "Subject":"Earth and Climate Science"
+    },
+    {
+      "Code":"HSS341",
+      "Name":"Environmental History",
+      "Credit":3,
+      "Semister":"VI ",
+      "Subject":"Humanities and Social Sciences"
+    },
+    {
+      "Code":"HSS341",
+      "Name":"Environmental History",
+      "Credit":3,
+      "Semister":"VIII",
+      "Subject":"Humanities and Social Sciences"
+    },
+    {
+      "Code":"HSS302",
+      "Name":"Lab training/Theory Project",
+      "Credit":3,
+      "Semister":"VI",
+      "Subject":"Humanities and Social Sciences"
+    },
+    {
+      "Code":"HSS402",
+      "Name":"Lab training/Theory Project",
+      "Credit":3,
+      "Semister":"VII",
+      "Subject":"Humanities and Social Sciences"
+    },
+    {
+      "Code":"BIO102",
+      "Name":"Introductory Biology II: Cellular and Molecular Biology",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"CHM102",
+      "Name":"Chemical Principles II",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"MTH102",
+      "Name":"Multi Variable Calculus",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"PHY102",
+      "Name":"World of Physics II- Waves and Matter",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"CHM121",
+      "Name":"Chemistry Lab I",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"BIO122",
+      "Name":"Biology Lab II",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"PHY121",
+      "Name":"Physics Lab I",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"IDC102",
+      "Name":"Mathematical Methods",
+      "Credit":3,
+      "Semister":"II",
+      "Subject":"Interdisciplinary Courses"
+    },
+    {
+      "Code":"HSS102",
+      "Name":"Critical Reading and Communication",
+      "Credit":2,
+      "Semister":"II",
+      "Subject":"Humanities and Social Sciences"
+    },
+    {
+      "Code":"BIO202",
+      "Name":"Introductory Biology IV: Biology of Systems",
+      "Credit":3,
+      "Semister":"IV",
+      "Subject":"Biology"
+    },
+    {
+      "Code":"CHM202",
+      "Name":"Chemistry III - Organic Chemistry",
+      "Credit":3,
+      "Semister":"IV",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"MTH202",
+      "Name":"Probability and Statistics",
+      "Credit":3,
+      "Semister":"IV",
+      "Subject":"Mathematics"
+    },
+    {
+      "Code":"PHY202",
+      "Name":"World of Physics IV – Quantum Physics",
+      "Credit":3,
+      "Semister":"IV",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"PHY222",
+      "Name":"Physics Lab III",
+      "Credit":2,
+      "Semister":"IV",
+      "Subject":"Physics"
+    },
+    {
+      "Code":"CHM222",
+      "Name":"Chemistry Lab III ",
+      "Credit":2,
+      "Semister":"IV",
+      "Subject":"Chemistry"
+    },
+    {
+      "Code":"IDC202",
+      "Name":"Optics",
+      "Credit":2,
+      "Semister":"IV",
+      "Subject":"Interdisciplinary Courses"
+    },
+    {
+      "Code":"ECS202",
+      "Name":"Earth System II",
+      "Credit":2,
+      "Semister":"IV",
+      "Subject":"Earth and Climate Science"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/container_header_img"
+        layout="@layout/activity_header_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/txt_profile_label_width"
+                android:layout_height="@dimen/txt_profile_label_width"
+                android:layout_gravity="center"
+                android:src="@drawable/userlogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Name" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:text="Amit Putta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Email Id" />
+
+                <TextView style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:inputType="textEmailAddress"
+                    android:text="amitputta@gmail.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Mobile No"
+                    />
+
+                <TextView
+                    style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:inputType="phone"
+                    android:text="9898674565" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Username"
+                    />
+
+                <TextView
+                    style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:text="amit_putta"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Password" />
+
+                <TextView
+                    style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:text="amit_putta123"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Roll No"
+                    />
+
+                <TextView
+                    style="@style/txt_profile_colon"/>
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:text="123"
+                    />
+            </LinearLayout>
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Course Id"
+                    />
+
+                <TextView
+                    style="@style/txt_profile_colon"/>
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:editable="false"
+                    android:text="BSMS123"
+                    />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/txt_profile_label"
+                    android:text="Term"
+                    />
+
+                <TextView
+                    style="@style/txt_profile_colon" />
+
+                <EditText
+                    style="@style/edttxt_profile_value"
+                    android:text="1st"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Register"
+                android:layout_marginTop="@dimen/txt_marginLeft"
+                android:layout_marginLeft="@dimen/edittxt_marginLeft"
+                android:layout_marginRight="@dimen/edittxt_marginLeft"
+                android:layout_gravity="center"
+                android:textColor="@color/edittext_textcolor"
+                android:background="@color/edittext_txtcolor_white"
+                />
+
+           <!-- <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/img_plus"
+                custom:fabSize="normal"
+                />-->
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+package com.mobilesutra.iiser_tirupati.Config;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Created by Sony on 30-04-2016.
+ */
+public class DocumentType {
+
+    static List<String> arr_document_type = Arrays.asList(
+            new String[]{"csv", "pdf", "xlsx", "xls", "txt", "rtf", "docx", "doc", "pptx", "ppt"});
+
+    static List<String> arr_document_type_registration = Arrays.asList(
+            new String[]{"jpg", "png"});
+
+
+    public static boolean check_valid_docuement(String str_document_type)
+    {
+        return arr_document_type.contains(str_document_type);
+    }
+
+    public static boolean check_valid_registartion_docuement(String str_document_type)
+    {
+        return arr_document_type_registration.contains(str_document_type);
+    }
+
+    public static String get_document_mimeType(String str_document_type)
+    {
+        String str_mimeType = "";
+        switch(str_document_type)
+        {
+            case "csv":str_mimeType =  "text/csv";break;
+            case "txt":str_mimeType =  "text/txt";break;
+            case "pdf":str_mimeType =  "application/pdf";break;
+            case "xlsx":str_mimeType =  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";break;
+            case "xls":str_mimeType =  "application/vnd.ms-excel";break;
+            case "rtf":str_mimeType =  "text/rtf";break;
+            case "docx":str_mimeType =  "application/vnd.openxmlformats-officedocument.wordprocessingml.documentf";break;
+            case "doc":str_mimeType =  "application/msword";break;
+            case "pptx":str_mimeType =  "application/vnd.openxmlformats-officedocument.presentationml.presentation";break;
+            case "ppt":str_mimeType =  "application/vnd.ms-powerpoint";break;
+            default: str_mimeType = "invalid";
+        }
+        return str_mimeType;
+    }
+
+
+}

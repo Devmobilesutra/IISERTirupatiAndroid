@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/image"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:text="Please Enter Correct OTP"
+            android:textSize="18dp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="18dp"
+            android:backgroundTint="#000"
+            android:textColor="#000000"
+            android:hint="Enter Your otp"/>
+
+        <TextView
+            android:id="@+id/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="Thanks for your feedback"
+            android:layout_centerInParent="true"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_below="@+id/txt_title"
+            android:textColor="#d72607"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

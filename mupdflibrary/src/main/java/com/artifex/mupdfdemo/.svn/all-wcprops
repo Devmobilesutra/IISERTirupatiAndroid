@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo
+END
+MuPDFReflowView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFReflowView.java
+END
+LinkInfoRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/LinkInfoRemote.java
+END
+SearchTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/SearchTask.java
+END
+ArrayDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/ArrayDeque.java
+END
+MuPDFReflowAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFReflowAdapter.java
+END
+Deque.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/Deque.java
+END
+SafeAnimatorInflater.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/SafeAnimatorInflater.java
+END
+MuPDFPageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFPageView.java
+END
+WidgetType.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/WidgetType.java
+END
+BitmapHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/BitmapHolder.java
+END
+OutlineActivityData.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/OutlineActivityData.java
+END
+OutlineItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/OutlineItem.java
+END
+PageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/PageView.java
+END
+LinkInfoExternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/LinkInfoExternal.java
+END
+MuPDFAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFAlert.java
+END
+MuPDFReaderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFReaderView.java
+END
+OutlineActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/OutlineActivity.java
+END
+Annotation.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/Annotation.java
+END
+MuPDFAlertInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFAlertInternal.java
+END
+MuPDFView.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFView.java
+END
+ChoosePDFItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/ChoosePDFItem.java
+END
+OutlineAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/OutlineAdapter.java
+END
+ChoosePDFActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/ChoosePDFActivity.java
+END
+SearchTaskResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/SearchTaskResult.java
+END
+MuPDFCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFCore.java
+END
+LinkInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/LinkInfo.java
+END
+ReaderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/ReaderView.java
+END
+LinkInfoVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/LinkInfoVisitor.java
+END
+LinkInfoInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/LinkInfoInternal.java
+END
+PrintDialogActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/PrintDialogActivity.java
+END
+TextChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/TextChar.java
+END
+AsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/AsyncTask.java
+END
+MuPDFActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFActivity.java
+END
+TextWord.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/TextWord.java
+END
+MuPDFPageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/MuPDFPageAdapter.java
+END
+ChoosePDFAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/IISERPUNE-Android/!svn/ver/126/trunk/IISERPUNE/mupdflibrary/src/main/java/com/artifex/mupdfdemo/ChoosePDFAdapter.java
+END

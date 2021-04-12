@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">IISER TIRUPATI</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="edtxt_hint_username">Username</string>
+    <string name="edtxt_hint_password">Password</string>
+
+    <string name="txt_remember_me">Show Password</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_new_login">Sign Up</string>
+    <string name="txt_slash">|</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="txt_about_us">About Us</string>
+    <string name="txt_about_us_value1">IISER Tirupati is the sixth Institute in the chain of IISERs established by the Govt. of India under the Ministry of HRD for imparting quality education in basic sciences and for setting up state-of-the-art research facilities for frontline and cutting-edge research in science. It started academic activity started in August 2015 in the spacious transit campus located at Sri Rama Engineering College, Rami Reddy Nagar, Karkambadi Road, Tirupati.</string>
+    <string name="txt_about_us_value2">The permanent campus of IISER will come up at Srinivasapuram and Panguru of Yerpedu mandal, just 3 kilometres from IIT Tirupati campus. The establishment of IISER and IIT in Tirupati paves the way for a unique synergy of two premier educational institutes in the country.</string>
+
+    <string name="app_name_with_index">PdfRendererBasic (%1$d/%2$d)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="Sending_data1">Sending data to server ..</string>
+    <string name="Internet_response">please check Internet Connection</string>
+
+    <string name="getting_data_marathi">getting data ...</string>
+    <string name="Response_dialog">getting data</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Submit">Submit</string>
+    <string name="Upload">Upload</string>
+    <string name="internet_problem">Not able to connect to server. Please check your Internet Connection.</string>
+    <string name="Ok">OK</string>
+</resources>

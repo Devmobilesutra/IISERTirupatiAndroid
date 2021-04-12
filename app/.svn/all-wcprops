@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app
+END
+proguard-rules.pro
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/IISERPUNE-Android/!svn/ver/8/trunk/IISERPUNE/app/proguard-rules.pro
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IISERPUNE-Android/!svn/ver/8/trunk/IISERPUNE/app/.gitignore
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/build.gradle
+END
+app.iml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/app.iml
+END

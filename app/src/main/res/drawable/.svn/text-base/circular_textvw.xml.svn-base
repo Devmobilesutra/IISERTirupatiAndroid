@@ -1,0 +1,22 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+        <solid android:color="@color/tab_back_color" />
+        <corners
+            android:topLeftRadius="3dp"
+            android:topRightRadius="3dp"
+            android:bottomLeftRadius="3dp"
+            android:bottomRightRadius="3dp"
+            />
+    </shape>
+-->
+
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">>
+    <solid android:color="@color/tab_back_color" />
+    <size
+        android:width="25dp"
+        android:height="25dp" />
+</shape>

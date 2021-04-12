@@ -1,0 +1,664 @@
+package com.mobilesutra.iiser_tirupati.Database;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.mobilesutra.iiser_tirupati.Config.IISERApp;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+
+/**
+ * Created by KALYANI on 02/05/2016.
+ */
+public class TABLE_USER_PROFILE {
+
+    public static String NAME = "tbl_user_profile",LOG_TAG = "tbl_user_profile";
+
+    public static String
+            COL_ID = "id",
+            COL_NAME = "name",
+            COL_ROLL_NUMBER = "roll_number",
+            COL_SEMESTER_NAME = "semester_name",
+            COL_EMAIL_ID = "email_id",
+            COL_MOBILE_NO = "mobile_no",
+            COL_USERNAME = "username",
+            COL_PASSWORD = "password",
+            COL_PHOTO_URL = "photo_url",
+            COL_UPDATED_DATE = "updated_date",
+            COL_USER_TYPE = "user_type",
+            COL_BATCH = "batch",
+            COL_DESIGNATION = "designation",
+            COL_RESEARCH = "research",
+            COL_DEGREE = "degree",
+            COL_PERSONAL_PAGE = "personal_page",
+            COL_IS_SYNC = "is_sync";
+
+    public static String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + NAME + " ("
+            + COL_ID + " INTEGER,"
+            + COL_NAME + " TEXT,"
+            + COL_ROLL_NUMBER + " TEXT,"
+            + COL_SEMESTER_NAME + " TEXT,"
+            + COL_EMAIL_ID + " TEXT,"
+            + COL_MOBILE_NO + " TEXT,"
+            + COL_USERNAME + " TEXT,"
+            + COL_PASSWORD + " TEXT,"
+            + COL_PHOTO_URL + " TEXT,"
+            + COL_UPDATED_DATE + " DATE,"
+            + COL_USER_TYPE + " TEXT,"
+            + COL_BATCH + " TEXT,"
+            + COL_DESIGNATION + " TEXT,"
+            + COL_RESEARCH + " TEXT,"
+            + COL_DEGREE + " TEXT,"
+            + COL_PERSONAL_PAGE + " TEXT,"
+            + COL_IS_SYNC + " TEXT)";
+
+    public static String QUERY_INSERT = "INSERT INTO " + NAME + " (" + COL_ID + "," + COL_NAME + "," + COL_ROLL_NUMBER + ","
+            + COL_SEMESTER_NAME + "," + COL_EMAIL_ID + "," + COL_MOBILE_NO + "," + COL_USERNAME + "," + COL_PASSWORD +
+            "," + COL_PHOTO_URL + "," + COL_UPDATED_DATE + "," + COL_USER_TYPE + "," + COL_IS_SYNC + "," + COL_BATCH +
+            "," + COL_DEGREE + "," + COL_DESIGNATION + "," + COL_RESEARCH + "," + COL_PERSONAL_PAGE +
+            ") VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+
+    public static String QUERY_UPDATE = "UPDATE  " + NAME + " SET " + COL_ID + "=? , " + COL_NAME + "=?, " + COL_ROLL_NUMBER + "=?, "
+            + COL_SEMESTER_NAME + "=?, " + COL_EMAIL_ID + "=?, " + COL_MOBILE_NO + "=?, " + COL_USERNAME + "=?, " + COL_PASSWORD +
+            "=?, " + COL_PHOTO_URL + "=?, " + COL_UPDATED_DATE + "=?, " + COL_USER_TYPE + "=?, " + COL_IS_SYNC + "=?, " + COL_BATCH +
+            "=?, " + COL_DEGREE + "=?, " + COL_DESIGNATION + "=?, " + COL_RESEARCH + "=?, " + COL_PERSONAL_PAGE +
+            "=? ";
+    public static String QUERY_INSERT1 = "INSERT INTO " + NAME + " (" + COL_ID + "," + COL_NAME + "," + COL_ROLL_NUMBER + ","
+            + COL_SEMESTER_NAME + "," + COL_EMAIL_ID + "," + COL_MOBILE_NO + "," + COL_USERNAME + "," + COL_PASSWORD +
+            "," + COL_PHOTO_URL + "," + COL_UPDATED_DATE + "," + COL_USER_TYPE + "," + COL_IS_SYNC + "," + COL_BATCH +
+            "," + COL_DEGREE + "," + COL_DESIGNATION + "," + COL_RESEARCH + "," + COL_PERSONAL_PAGE +
+            ") VALUES ('1','kalyani','12','X','kalyanibhate.31@gmail.com','9604374232','kalyanibhate','kalyani','abc.com','2016-05-09','student',?,?,?,?,?,?);";
+
+    //public static String QUERY_UPDATE = " UPDATE " + NAME + " SET " + COL_IS_SELECTED + "='Y' " + " WHERE " + COL_ID + "=? ";
+    public static List<LinkedHashMap<String, String>> get_student_details() {
+        SQLiteDatabase db = IISERApp.db.getReadableDatabase();
+        List<LinkedHashMap<String, String>> menuItems = new ArrayList();
+        String str1 = "select * from " + NAME + " ;";
+        Cursor c = db.rawQuery(str1, null);
+        IISERApp.log("get_student_details","str1->"+str1);
+        int count=c.getCount();
+        IISERApp.log("get_student_details","count->"+count);
+
+        if (c.moveToFirst()) {
+            do {
+                LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+
+
+                String user_id=c.getString(c.getColumnIndexOrThrow(COL_ID));
+                if(user_id.equalsIgnoreCase("") || user_id.equalsIgnoreCase("null"))
+                {
+                    map.put("user_id",
+                            "");
+                }
+                else
+                {
+                    map.put("user_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_ID)));
+                }
+
+                /* map.put("user_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_ID)));*/
+                String student_name=c.getString(c.getColumnIndexOrThrow(COL_NAME));
+                if(student_name.equalsIgnoreCase("") || student_name.equalsIgnoreCase("null"))
+                {
+                    map.put("student_name",
+                            "");
+                }
+                else
+                {
+                    map.put("student_name",
+                            c.getString(c.getColumnIndexOrThrow(COL_NAME)));
+                }
+
+
+                /*map.put("student_name",
+                        c.getString(c.getColumnIndexOrThrow(COL_NAME)));*/
+                String roll_no=c.getString(c.getColumnIndexOrThrow(COL_ROLL_NUMBER));
+                if(roll_no.equalsIgnoreCase("") || roll_no.equalsIgnoreCase("null"))
+                {
+                    map.put("roll_no",
+                            "");
+                }
+                else
+                {
+                    map.put("roll_no",
+                            c.getString(c.getColumnIndexOrThrow(COL_ROLL_NUMBER)));
+                }
+
+               /*map.put("roll_no",
+                        c.getString(c.getColumnIndexOrThrow(COL_ROLL_NUMBER)));*/
+
+                String semester_name=c.getString(c.getColumnIndexOrThrow(COL_SEMESTER_NAME));
+                if(semester_name.equalsIgnoreCase("") || semester_name.equalsIgnoreCase("null"))
+                {
+                    map.put("semester_name",
+                            "");
+                }
+                else
+                {
+                    map.put("semester_name",
+                            c.getString(c.getColumnIndexOrThrow(COL_SEMESTER_NAME)));
+                }
+               /* map.put("semester_name",
+                        c.getString(c.getColumnIndexOrThrow(COL_SEMESTER_NAME)));*/
+
+
+                String email_id=c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID));
+                if(email_id.equalsIgnoreCase("") || email_id.equalsIgnoreCase("null"))
+                {
+                    map.put("email_id",
+                            "");
+                }
+                else
+                {
+                    map.put("email_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));
+                }
+
+
+
+                /*map.put("email_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));
+                */
+
+                String mob_no=c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO));
+                if(mob_no.equalsIgnoreCase("") || mob_no.equalsIgnoreCase("null"))
+                {
+                    map.put("mobile_no",
+                            "");
+                }
+                else
+                {
+                    map.put("mobile_no",
+                            c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO)));
+                }
+
+
+
+
+                String username=c.getString(c.getColumnIndexOrThrow(COL_USERNAME));
+                if(username.equalsIgnoreCase("") || username.equalsIgnoreCase("null"))
+                {
+                    map.put("username",
+                            "");
+                }
+                else
+                {
+                    map.put("username",
+                            c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));
+                }
+
+
+               /* map.put("username",
+                        c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));*/
+
+                String password=c.getString(c.getColumnIndexOrThrow(COL_PASSWORD));
+                if(password.equalsIgnoreCase("") || password.equalsIgnoreCase("null"))
+                {
+                    map.put("password",
+                            "");
+                }
+                else
+                {
+                    map.put("password",
+                            c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));
+                }
+                /*map.put("password",
+                        c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));*/
+
+                String photo_url=c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL));
+                if(photo_url.equalsIgnoreCase("") || photo_url.equalsIgnoreCase("null"))
+                {
+                    map.put("photo_url",
+                            "");
+                }
+                else
+                {
+                    map.put("photo_url",
+                            c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));
+                }
+               /* map.put("photo_url",
+                        c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));*/
+
+                String batch_id=c.getString(c.getColumnIndexOrThrow(COL_BATCH));
+                if(batch_id.equalsIgnoreCase("") || batch_id.equalsIgnoreCase("null"))
+                {
+                    map.put("batch_id",
+                            "");
+                }
+                else
+                {
+                    map.put("batch_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_BATCH)));
+                }
+               /* map.put("batch_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_BATCH)));*/
+                menuItems.add(map);
+            } while (c.moveToNext());
+        }
+        c.close();
+        return menuItems;
+    }
+
+    public static List<LinkedHashMap<String, String>> get_faculty_details() {
+        SQLiteDatabase db = IISERApp.db.getReadableDatabase();
+        List<LinkedHashMap<String, String>> menuItems = new ArrayList();
+        String str1 = "select * from " + NAME + " ;";
+        Cursor c = db.rawQuery(str1, null);
+
+        if (c.moveToFirst()) {
+            do {
+                LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+                String user_id=c.getString(c.getColumnIndexOrThrow(COL_ID));
+                if(user_id.equalsIgnoreCase("") || user_id.equalsIgnoreCase("null"))
+                {
+                    map.put("user_id",
+                            "");
+                }
+                else
+                {
+                    map.put("user_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_ID)));
+                }
+
+               /* map.put("user_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_ID)));*/
+
+                String student_name=c.getString(c.getColumnIndexOrThrow(COL_NAME));
+                if(student_name.equalsIgnoreCase("") || student_name.equalsIgnoreCase("null"))
+                {
+                    map.put("student_name",
+                            "");
+                }
+                else
+                {
+                    map.put("student_name",
+                            c.getString(c.getColumnIndexOrThrow(COL_NAME)));
+                }
+
+              /*  map.put("student_name",
+                        c.getString(c.getColumnIndexOrThrow(COL_NAME)));*/
+
+                String student_name1=c.getString(c.getColumnIndexOrThrow(COL_NAME));
+                if(student_name1.equalsIgnoreCase("") || student_name1.equalsIgnoreCase("null"))
+                {
+                    map.put("student_name",
+                            "");
+                }
+                else
+                {
+                    map.put("student_name",
+                            c.getString(c.getColumnIndexOrThrow(COL_NAME)));
+                }
+
+                String degree=c.getString(c.getColumnIndexOrThrow(COL_DEGREE));
+                if(degree.equalsIgnoreCase("") || degree.equalsIgnoreCase("null"))
+                {
+                    map.put("degree",
+                            "");
+                }
+                else
+                {
+                    map.put("degree",
+                            c.getString(c.getColumnIndexOrThrow(COL_DEGREE)));
+                }
+               /* map.put("degree",
+                        c.getString(c.getColumnIndexOrThrow(COL_DEGREE)));*/
+
+                String designation=c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION));
+                if(designation.equalsIgnoreCase("") || designation.equalsIgnoreCase("null"))
+                {
+                    map.put("designation",
+                            "");
+                }
+                else
+                {
+                    map.put("designation",
+                            c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION)));
+                }
+
+                /*map.put("designation",
+                        c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION)));*/
+
+                String research=c.getString(c.getColumnIndexOrThrow(COL_RESEARCH));
+                if(research.equalsIgnoreCase("") || research.equalsIgnoreCase("null"))
+                {
+                    map.put("research",
+                            "");
+                }
+                else
+                {
+                    map.put("research",
+                            c.getString(c.getColumnIndexOrThrow(COL_RESEARCH)));
+                }
+
+                /*map.put("research",
+                        c.getString(c.getColumnIndexOrThrow(COL_RESEARCH)));*/
+
+
+
+                String email_id=c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID));
+                if(email_id.equalsIgnoreCase("") || email_id.equalsIgnoreCase("null"))
+                {
+                    map.put("email_id",
+                            "");
+                }
+                else
+                {
+                    map.put("email_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));
+                }
+               /* map.put("email_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));*/
+
+
+              String mob_no=c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO));
+                if(mob_no.equalsIgnoreCase("") || mob_no.equalsIgnoreCase("null"))
+                {
+                    map.put("mobile_no",
+                           "");
+                }
+                else
+                {
+                    map.put("mobile_no",
+                            c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO)));
+                }
+
+
+
+                String username=c.getString(c.getColumnIndexOrThrow(COL_USERNAME));
+                if(username.equalsIgnoreCase("") || username.equalsIgnoreCase("null"))
+                {
+                    map.put("username",
+                            "");
+                }
+                else
+                {
+                    map.put("username",
+                            c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));
+                }
+
+               /* map.put("username",
+                        c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));*/
+
+
+                String password=c.getString(c.getColumnIndexOrThrow(COL_PASSWORD));
+                if(password.equalsIgnoreCase("") || password.equalsIgnoreCase("null"))
+                {
+                    map.put("password",
+                            "");
+                }
+                else
+                {
+                    map.put("password",
+                            c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));
+                }
+               /* map.put("password",
+                        c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));*/
+
+                String photo_url=c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL));
+                if(photo_url.equalsIgnoreCase("") || photo_url.equalsIgnoreCase("null"))
+                {
+                    map.put("photo_url",
+                            "");
+                }
+                else
+                {
+                    map.put("photo_url",
+                            c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));
+                }
+               /* map.put("photo_url",
+                        c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));*/
+
+                String personal_page=c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE));
+                if(personal_page.equalsIgnoreCase("") || personal_page.equalsIgnoreCase("null"))
+                {
+                    map.put("personal_page",
+                            "");
+                }
+                else
+                {
+                    map.put("personal_page",
+                            c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE)));
+                }
+                /*map.put("personal_page",
+                        c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE)));*/
+                menuItems.add(map);
+            } while (c.moveToNext());
+        }
+        c.close();
+        return menuItems;
+    }
+    public static List<LinkedHashMap<String, String>> get_supervisor_details() {
+        SQLiteDatabase db = IISERApp.db.getReadableDatabase();
+        List<LinkedHashMap<String, String>> menuItems = new ArrayList();
+        String str1 = "select * from " + NAME + " ;";
+        Cursor c = db.rawQuery(str1, null);
+
+        if (c.moveToFirst()) {
+            do {
+                LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+
+                String user_id=c.getString(c.getColumnIndexOrThrow(COL_ID));
+                if(user_id.equalsIgnoreCase("") || user_id.equalsIgnoreCase("null"))
+                {
+                    map.put("user_id",
+                            "");
+                }
+                else
+                {
+                    map.put("user_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_ID)));
+                }
+               /* map.put("user_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_ID)));*/
+
+                String student_name=c.getString(c.getColumnIndexOrThrow(COL_NAME));
+                if(student_name.equalsIgnoreCase("") || student_name.equalsIgnoreCase("null"))
+                {
+                    map.put("student_name",
+                            "");
+                }
+                else
+                {
+                    map.put("student_name",
+                            c.getString(c.getColumnIndexOrThrow(COL_NAME)));
+                }
+
+
+               /* map.put("student_name",
+                        c.getString(c.getColumnIndexOrThrow(COL_NAME)));*/
+
+
+                String degree=c.getString(c.getColumnIndexOrThrow(COL_DEGREE));
+                if(degree.equalsIgnoreCase("") || degree.equalsIgnoreCase("null"))
+                {
+                    map.put("degree",
+                            "");
+                }
+                else
+                {
+                    map.put("degree",
+                            c.getString(c.getColumnIndexOrThrow(COL_DEGREE)));
+                }
+              /*  map.put("degree",
+                        c.getString(c.getColumnIndexOrThrow(COL_DEGREE)));*/
+                String designation=c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION));
+                if(designation.equalsIgnoreCase("") || designation.equalsIgnoreCase("null"))
+                {
+                    map.put("designation",
+                            "");
+                }
+                else
+                {
+                    map.put("designation",
+                            c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION)));
+                }
+
+                /*map.put("designation",
+                        c.getString(c.getColumnIndexOrThrow(COL_DESIGNATION)));*/
+
+                String research=c.getString(c.getColumnIndexOrThrow(COL_RESEARCH));
+                if(research.equalsIgnoreCase("") || research.equalsIgnoreCase("null"))
+                {
+                    map.put("research",
+                            "");
+                }
+                else
+                {
+                    map.put("research",
+                            c.getString(c.getColumnIndexOrThrow(COL_RESEARCH)));
+                }
+
+              /*  map.put("research",
+                        c.getString(c.getColumnIndexOrThrow(COL_RESEARCH)));*/
+
+                String email_id=c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID));
+                if(email_id.equalsIgnoreCase("") || email_id.equalsIgnoreCase("null"))
+                {
+                    map.put("email_id",
+                            "");
+                }
+                else
+                {
+                    map.put("email_id",
+                            c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));
+                }
+               /* map.put("email_id",
+                        c.getString(c.getColumnIndexOrThrow(COL_EMAIL_ID)));*/
+
+
+                String mob_no=c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO));
+                if(mob_no.equalsIgnoreCase("") || mob_no.equalsIgnoreCase("null"))
+                {
+                    map.put("mobile_no",
+                            "");
+                }
+                else
+                {
+                    map.put("mobile_no",
+                            c.getString(c.getColumnIndexOrThrow(COL_MOBILE_NO)));
+                }
+
+
+                String username=c.getString(c.getColumnIndexOrThrow(COL_USERNAME));
+                if(username.equalsIgnoreCase("") || username.equalsIgnoreCase("null"))
+                {
+                    map.put("username",
+                            "");
+                }
+                else
+                {
+                    map.put("username",
+                            c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));
+                }
+               /* map.put("username",
+                        c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));*/
+
+
+
+                String password=c.getString(c.getColumnIndexOrThrow(COL_PASSWORD));
+                if(password.equalsIgnoreCase("") || password.equalsIgnoreCase("null"))
+                {
+                    map.put("password",
+                            "");
+                }
+                else
+                {
+                    map.put("password",
+                            c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));
+                }
+               /* map.put("password",
+                        c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));*/
+
+
+                String photo_url=c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL));
+                if(photo_url.equalsIgnoreCase("") || photo_url.equalsIgnoreCase("null"))
+                {
+                    map.put("photo_url",
+                            "");
+                }
+                else
+                {
+                    map.put("photo_url",
+                            c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));
+                }
+               /* map.put("photo_url",
+                        c.getString(c.getColumnIndexOrThrow(COL_PHOTO_URL)));*/
+
+                String personal_page=c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE));
+                if(personal_page.equalsIgnoreCase("") || personal_page.equalsIgnoreCase("null"))
+                {
+                    map.put("personal_page",
+                            "");
+                }
+                else
+                {
+                    map.put("personal_page",
+                            c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE)));
+                }
+              /*  map.put("personal_page",
+                        c.getString(c.getColumnIndexOrThrow(COL_PERSONAL_PAGE)));*/
+                menuItems.add(map);
+            } while (c.moveToNext());
+        }
+        c.close();
+        return menuItems;
+    }
+    /**
+     * FunctionName : getusername_password
+     *
+     * @author kalyani
+     */
+    public static ArrayList<String> getusername_password() {
+        SQLiteDatabase db = IISERApp.db.getReadableDatabase();
+        ArrayList<String> menuItems = new ArrayList<String>();
+        String str1 = "select * from " + NAME + " ;";
+        Cursor c = db.rawQuery(str1, null);
+
+        if (c.moveToFirst()) {
+            do {
+                String username = (c.getString(c.getColumnIndexOrThrow(COL_USERNAME)));
+                String password = (c.getString(c.getColumnIndexOrThrow(COL_PASSWORD)));
+                menuItems.add(username);
+                menuItems.add(password);
+            } while (c.moveToNext());
+        }
+        c.close();
+        return menuItems;
+    }
+
+    public static String get_student_roll_no() {
+        IISERApp.log("abcc","in table is->");
+        SQLiteDatabase db = IISERApp.db.getReadableDatabase();
+        String roll_no="";
+
+        String str1 = "select * from " + NAME + " ;";
+        Cursor c = db.rawQuery(str1, null);
+
+        if (c.moveToFirst()) {
+            do {
+                 roll_no = (c.getString(c.getColumnIndexOrThrow(COL_ROLL_NUMBER)));
+
+            } while (c.moveToNext());
+        }
+        IISERApp.log("abcc","in table is->"+roll_no);
+
+        c.close();
+
+        return roll_no;
+    }
+    public static void delete_tbl_user_profile_sync() {
+        SQLiteDatabase db = IISERApp.db.getWritableDatabase();
+        String str1 = "select * from " + NAME;
+        Cursor c = db.rawQuery(str1, null);
+        int count= c.getCount();
+        IISERApp.log(LOG_TAG, "Count"+count);
+        int numRows = db.delete(NAME, null, null);
+        IISERApp.log(LOG_TAG, "In delete_tbl_user_profile_sync");
+
+        IISERApp.log(LOG_TAG, "DeletedRows:->" + numRows);
+    }
+}

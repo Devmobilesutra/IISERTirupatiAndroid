@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView
+        android:id="@+id/img_center_app_icon"
+        android:layout_width="@dimen/center_img_width"
+        android:layout_height="@dimen/center_img_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/center_img_top_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/center_app_img" />-->
+
+   <!-- <ImageView
+        android:id="@+id/img_college_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/center_img_top_margin"
+        android:src="@drawable/college_pic" />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:weightSum="1"
+    >
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#faf7f7"
+        android:layout_weight="1"
+        android:gravity="center"/>
+</LinearLayout>
+
+
+    <com.mobilesutra.iiser_tirupati.banner.SliderLayout
+        android:id="@+id/sample_output"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="invisible"
+        custom:pager_animation="Accordion"
+        custom:pager_animation_span="1100"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/add_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMISSION PROCESS"
+        android:textStyle="bold"
+        android:textSize="15dp"
+       android:background="#de77caec"
+        android:textColor="#3d3d3d"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+    <TextView
+        android:id="@+id/add_process1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="PhD-Timetable"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/add_iphd"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="IPhD-Timetable"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:gravity="center" />
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/bs_ms_sem_two"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BS-MS Sem II"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/bs_ms_sem_four"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BS-MS Sem IV"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/bs_ms_sem_six"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BS-MS Sem VI"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/bs_ms_sem_eight"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BS-MS Sem VIII"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:gravity="center"
+             />
+
+    </LinearLayout>
+
+
+
+    <!--<TextView
+        android:id="@+id/add_bsms"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="BS_MS-Timetable"
+        android:layout_gravity="center"
+        android:textColor="#3d3d3d"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textStyle="bold" />-->
+
+
+
+</LinearLayout>

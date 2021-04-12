@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.Fragment_Attendence">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_gravity="center_vertical|center_horizontal"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_onclick_color"
+                android:text="TOTAL NUMBER OF CLASS :"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_totalNo_classes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/edittext_textcolor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRESENT :"
+                android:textColor="@color/tab_onclick_color"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_total_present"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/edittext_textcolor"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_onclick_color"
+            android:text="PERCENTAGE :"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_total_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/edittext_textcolor"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:id="@+id/calGrird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            >
+
+            <com.mobilesutra.iiser_tirupati.Activities.CalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+       <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img_background"
+            android:text="Back"
+            android:gravity="center_horizontal|center_vertical"
+            android:drawableLeft="@drawable/left_arrow_hdpi"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

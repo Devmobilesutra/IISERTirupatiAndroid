@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/banner_height">
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hee"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#e62bdc"
+        android:layout_toRightOf="@+id/description_layout"
+        android:layout_toEndOf="@+id/description_layout"
+        android:layout_below="@+id/description_layout"
+        android:id="@+id/textView2" />-->
+    <ImageView
+        android:id="@+id/daimajia_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        android:scaleType="fitXY"
+        android:background="#000000"
+        />
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="0dp">
+            <TextView
+                android:id="@+id/description"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+</RelativeLayout>

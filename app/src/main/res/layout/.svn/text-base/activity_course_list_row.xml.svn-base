@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/lnrlayout_event_cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/txt_marginLeft"
+            android:layout_marginRight="@dimen/txt_marginLeft"
+            android:layout_marginTop="@dimen/event_margin"
+            android:layout_marginBottom="@dimen/event_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:id="@+id/medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/large_card_padding">
+
+                <!-- <ImageView
+                     android:id="@+id/img_profile_photo"
+                     android:layout_width="@dimen/img_deal_medium_hw"
+                     android:layout_height="@dimen/img_deal_medium_hw"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentTop="false"
+                     android:layout_centerVertical="true"
+                     android:layout_margin="@dimen/img_deal_medium_margin"
+                     android:scaleType="fitXY"
+
+                     />
+ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/txt_deal_medium_left_marging"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/txt_course_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/txt_margin_top"
+                        android:layout_marginLeft="@dimen/txt_margin_top"
+                        android:ellipsize="end"
+                        android:paddingBottom="@dimen/txt_line1_padding_top"
+                        android:paddingTop="@dimen/txt_line1_padding_top"
+                        android:singleLine="true"
+                        android:text="Silverberries Centre"
+                        android:textColor="#687982"
+                        android:textSize="@dimen/text_body2"
+                        android:textStyle="bold" />
+
+
+
+                    <!--&lt;!&ndash; <TextView
+                         android:id="@+id/txt_sub_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="@dimen/txt_margin_top"
+                         android:layout_marginLeft="@dimen/txt_margin_top"
+                         android:ellipsize="marquee"
+                         android:focusable="true"
+                         android:focusableInTouchMode="true"
+                         android:freezesText="true"
+                         android:marqueeRepeatLimit="marquee_forever"
+                         android:scrollHorizontally="true"
+                         android:singleLine="true"
+                         android:text="Infertility Clinic"
+                         android:textColor="#687982"
+                         android:textSize="@dimen/text_body1" />-->
+
+                    <!--<TextView
+                        android:id="@+id/txt_submission_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/txt_margin_top"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Any Text"
+                        android:textColor="#687982"
+                        android:textSize="@dimen/text_body1" />-->
+
+                    <!-- <TextView
+                         android:id="@+id/txt_line4"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/txt_margin_top"
+                         android:layout_marginBottom="@dimen/txt_line1_padding_top"
+                         android:ellipsize="marquee"
+                         android:marqueeRepeatLimit="marquee_forever"
+                         android:scrollHorizontally="true"
+                         android:singleLine="true"
+                         android:text="Hysteroscopy, Preconception Planning And Counselling"
+                         android:textColor="#687982"
+                         android:textSize="@dimen/text_body1" />-->
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@android:color/darker_gray" />-->
+</LinearLayout>

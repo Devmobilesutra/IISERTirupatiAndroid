@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">IISER PUNE</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="edtxt_hint_username">Username</string>
+    <string name="edtxt_hint_password">Password</string>
+
+    <string name="txt_remember_me">Show Password</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_new_login">Sign Up</string>
+    <string name="txt_slash">|</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="txt_about_us">About Us</string>
+    <string name="txt_about_us_value1">IISER Pune is a research-intensive teaching institute. Our faculty and students investigate questions in science that lie beyond the boundaries of conventional thinking. The whole ambience is very academic with high energy levels to pursue top quality research.</string>
+    <string name="txt_about_us_value2">IISER Pune is also a member of the Association of Indian Universities. Since its inception, IISER Pune has published close to 900 research papers in highly reputed national and international journals. Several of these publications have come out of the 5th year research projects of BS-MS students.</string>
+
+    <string name="app_name_with_index">PdfRendererBasic (%1$d/%2$d)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Submit">Submit</string>
+    <string name="Upload">Upload</string>
+    <string name="internet_problem">Not able to connect to server. Please check your Internet Connection.</string>
+</resources>

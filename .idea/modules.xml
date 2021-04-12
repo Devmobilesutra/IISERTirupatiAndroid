@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IISERTirupatiAndroid-iiser_29Jan2021.iml" filepath="$PROJECT_DIR$/IISERTirupatiAndroid-iiser_29Jan2021.iml" group="IISERTirupatiAndroid-iiser_29Jan2021" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="IISERTirupatiAndroid-iiser_29Jan2021/app" />
+      <module fileurl="file://$PROJECT_DIR$/mupdflibrary/mupdflibrary.iml" filepath="$PROJECT_DIR$/mupdflibrary/mupdflibrary.iml" group="IISERTirupatiAndroid-iiser_29Jan2021/mupdflibrary" />
+    </modules>
+  </component>
+</project>

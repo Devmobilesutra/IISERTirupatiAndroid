@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout
+END
+activity_assignment_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_assignment_row.xml
+END
+activity_course_selection.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_course_selection.xml
+END
+activity_error.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/IISERPUNE-Android/!svn/ver/18/trunk/IISERPUNE/app/src/main/res/layout/activity_error.xml
+END
+activity_add_assignment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_add_assignment.xml
+END
+fragment_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/fragment_two.xml
+END
+activity_exam_schedule_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_exam_schedule_row.xml
+END
+activity_fragment_timetable.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/IISERPUNE-Android/!svn/ver/58/trunk/IISERPUNE/app/src/main/res/layout/activity_fragment_timetable.xml
+END
+fragment__bsms__course.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/IISERPUNE-Android/!svn/ver/53/trunk/IISERPUNE/app/src/main/res/layout/fragment__bsms__course.xml
+END
+activity_header_profile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/IISERPUNE-Android/!svn/ver/33/trunk/IISERPUNE/app/src/main/res/layout/activity_header_profile.xml
+END
+render_type_text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/render_type_text.xml
+END
+activity_registration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/IISERPUNE-Android/!svn/ver/61/trunk/IISERPUNE/app/src/main/res/layout/activity_registration.xml
+END
+activity_header_back.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/IISERPUNE-Android/!svn/ver/60/trunk/IISERPUNE/app/src/main/res/layout/activity_header_back.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/IISERPUNE-Android/!svn/ver/8/trunk/IISERPUNE/app/src/main/res/layout/activity_main.xml
+END
+activity_fragment_profile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/IISERPUNE-Android/!svn/ver/139/trunk/IISERPUNE/app/src/main/res/layout/activity_fragment_profile.xml
+END
+activity_course_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_course_list_row.xml
+END
+activity_event_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/IISERPUNE-Android/!svn/ver/91/trunk/IISERPUNE/app/src/main/res/layout/activity_event_details.xml
+END
+fragment_three.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/IISERPUNE-Android/!svn/ver/140/trunk/IISERPUNE/app/src/main/res/layout/fragment_three.xml
+END
+fragment_integratedphd_course.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/IISERPUNE-Android/!svn/ver/52/trunk/IISERPUNE/app/src/main/res/layout/fragment_integratedphd_course.xml
+END
+pdf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/IISERPUNE-Android/!svn/ver/122/trunk/IISERPUNE/app/src/main/res/layout/pdf.xml
+END
+fragment_six.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/fragment_six.xml
+END
+activity_tab_header_footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/IISERPUNE-Android/!svn/ver/51/trunk/IISERPUNE/app/src/main/res/layout/activity_tab_header_footer.xml
+END
+fragment_four.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/IISERPUNE-Android/!svn/ver/53/trunk/IISERPUNE/app/src/main/res/layout/fragment_four.xml
+END
+fragment_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/fragment_one.xml
+END
+activity_fragment_notice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_fragment_notice.xml
+END
+activity_fragment_exam_schedule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/IISERPUNE-Android/!svn/ver/140/trunk/IISERPUNE/app/src/main/res/layout/activity_fragment_exam_schedule.xml
+END
+activity_list_row_faculty_profile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_list_row_faculty_profile.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/IISERPUNE-Android/!svn/ver/122/trunk/IISERPUNE/app/src/main/res/layout/main.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/IISERPUNE-Android/!svn/ver/10/trunk/IISERPUNE/app/src/main/res/layout/activity_login.xml
+END
+activity_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_header.xml
+END
+activity_faculty_profile_new.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_faculty_profile_new.xml
+END
+fragment__faculty_profile_new.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/IISERPUNE-Android/!svn/ver/140/trunk/IISERPUNE/app/src/main/res/layout/fragment__faculty_profile_new.xml
+END
+activity_custom_actionbar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/IISERPUNE-Android/!svn/ver/67/trunk/IISERPUNE/app/src/main/res/layout/activity_custom_actionbar.xml
+END
+activity_assignment_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/IISERPUNE-Android/!svn/ver/36/trunk/IISERPUNE/app/src/main/res/layout/activity_assignment_details.xml
+END
+fragment_five.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/fragment_five.xml
+END
+activity_list_row_event.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_list_row_event.xml
+END
+render_type_default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/IISERPUNE-Android/!svn/ver/22/trunk/IISERPUNE/app/src/main/res/layout/render_type_default.xml
+END
+custom_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/IISERPUNE-Android/!svn/ver/53/trunk/IISERPUNE/app/src/main/res/layout/custom_tab.xml
+END
+activity_exam_sch_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_exam_sch_detail.xml
+END
+slider_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/IISERPUNE-Android/!svn/ver/22/trunk/IISERPUNE/app/src/main/res/layout/slider_layout.xml
+END
+activity_exam_sc_detail_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/IISERPUNE-Android/!svn/ver/46/trunk/IISERPUNE/app/src/main/res/layout/activity_exam_sc_detail_row.xml
+END
+activity_activity_assign_image.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/IISERPUNE-Android/!svn/ver/142/trunk/IISERPUNE/app/src/main/res/layout/activity_activity_assign_image.xml
+END
+activity_timetable_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/IISERPUNE-Android/!svn/ver/47/trunk/IISERPUNE/app/src/main/res/layout/activity_timetable_row.xml
+END
+activity_tabhost_footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/IISERPUNE-Android/!svn/ver/60/trunk/IISERPUNE/app/src/main/res/layout/activity_tabhost_footer.xml
+END
+activity_tabhost.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/IISERPUNE-Android/!svn/ver/55/trunk/IISERPUNE/app/src/main/res/layout/activity_tabhost.xml
+END
+activity_fragment_assign.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/IISERPUNE-Android/!svn/ver/137/trunk/IISERPUNE/app/src/main/res/layout/activity_fragment_assign.xml
+END
+activity_course_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/IISERPUNE-Android/!svn/ver/38/trunk/IISERPUNE/app/src/main/res/layout/activity_course_details.xml
+END
+activity_icon_tabs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/IISERPUNE-Android/!svn/ver/11/trunk/IISERPUNE/app/src/main/res/layout/activity_icon_tabs.xml
+END

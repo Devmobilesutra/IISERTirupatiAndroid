@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.mobilesutra.iiser_tirupati.Tabs.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/recyclerView_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="2">-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="0.7"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Roll No"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/tab_back_color"-->
+                    <!--android:padding="7dp"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1.3"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Present"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/tab_back_color"-->
+                    <!--android:padding="7dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/rv_rollnumber"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/calenderGrird"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+
+            <!--<com.mobilesutra.iiser_tirupati.Activities.CalendarView-->
+                <!--android:id="@+id/calendar_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp" />-->
+        <!--</LinearLayout>-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/img_background"-->
+            <!--android:text="Back"-->
+            <!--android:gravity="center_horizontal|center_vertical"-->
+            <!--android:drawableLeft="@drawable/left_arrow_hdpi"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:visibility="gone" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+</FrameLayout>

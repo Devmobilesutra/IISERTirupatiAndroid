@@ -1,0 +1,753 @@
+{
+  "course_data": [
+    {
+      "Code": "BIO101",
+      "Name": "Introductory Biology I",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "CHM101",
+      "Name": "Chemical Principles-I",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "MTH100",
+      "Name": "Introduction to Proofs",
+      "Credit": "2",
+      "Semister": "I",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH101",
+      "Name": "Single Variable Calculus",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "PHY101",
+      "Name": "World of Physics I-Mechanics",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "BIO121",
+      "Name": "Practical: Basic Biology",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "IDC101",
+      "Name": "Introduction to Computing",
+      "Credit": "3",
+      "Semister": "I",
+      "Subject": "Interdisciplinary Courses"
+    },
+    {
+      "Code": "BIO201",
+      "Name": "Introductory Biology III: Ecology and Evolution",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "CHM201",
+      "Name": " Principles of Inorganic Chemistry",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "MTH201",
+      "Name": "Linear Algebra",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "PHY201",
+      "Name": "World of Physics III: Electricity & Magnetism",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "BIO221",
+      "Name": "Biology Lab III",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "CHM221",
+      "Name": "Chemistry Lab II ",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "PHY221",
+      "Name": "Physics Lab II ",
+      "Credit": "3",
+      "Semister": "III",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "HSS201",
+      "Name": "An Introduction to the History of Science, Technology and Medicine ",
+      "Credit": "2",
+      "Semister": "III",
+      "Subject": "Humanities and Social Sciences"
+    },
+    {
+      "Code": "ECS201",
+      "Name": "Earth System I ",
+      "Credit": "2",
+      "Semister": "III",
+      "Subject": "Earth and Climate Science"
+    },
+    {
+      "Code": "BIO310",
+      "Name": "Biostatistics ",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO311",
+      "Name": "Advanced Cell Biology",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO313",
+      "Name": "Advanced Molecular Biology",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO314",
+      "Name": "Bioinformatics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO320",
+      "Name": "Genetics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO322",
+      "Name": "Biophysics-I",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO410",
+      "Name": "Advanced Biochemistry I",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO411",
+      "Name": "Ecology I",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO310",
+      "Name": "Biostatistics ",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO311",
+      "Name": "Advanced Cell Biology",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO313",
+      "Name": "Advanced Molecular Biology",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO314",
+      "Name": "Bioinformatics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO320",
+      "Name": "Genetics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO322",
+      "Name": "Biophysics-I",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO410",
+      "Name": "Advanced Biochemistry I",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO411",
+      "Name": "Ecology I",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO301",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO334",
+      "Name": "Neurobiology I",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO334",
+      "Name": "Neurobiology I",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO401",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO431",
+      "Name": "Epigenetics",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO431",
+      "Name": "Epigenetics",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO454",
+      "Name": "Structural Biology",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO454",
+      "Name": "Structural Biology",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO452",
+      "Name": "Plant Biology  II",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO352",
+      "Name": "Animal Physiology II",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "BIO353",
+      "Name": "Immunology II",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Biology"
+    },
+    {
+      "Code": "CHM311",
+      "Name": "Physical Organic Chemistry  ",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM312",
+      "Name": "Main Group Chemistry",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM320",
+      "Name": "Symmetry and Group Theory",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM331",
+      "Name": "Self-Assembly in Chemistry",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM332",
+      "Name": "Separation Principles and techniques",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM311",
+      "Name": "Physical Organic Chemistry  ",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM312",
+      "Name": "Main Group Chemistry",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM320",
+      "Name": "Symmetry and Group Theory",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM331",
+      "Name": "Self-Assembly in Chemistry",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM332",
+      "Name": "Separation Principles and techniques",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM340",
+      "Name": "Advanced Organic Chemistry Laboratory",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM410",
+      "Name": "Advanced Molecular Spectroscopy ",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM411",
+      "Name": "Organic Synthesis ? II",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM413",
+      "Name": "Bioinorganic Chemistry",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM430",
+      "Name": "Advanced Physical Chemistry Laboratory",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM431",
+      "Name": "Chemical Biology",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM432",
+      "Name": "Solid State Chemistry",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM436",
+      "Name": "Molecular Modelling and Simulation",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM445",
+      "Name": "Electrochemistry",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM301",
+      "Name": "Lab Training\/ Theory Project ",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "CHM401",
+      "Name": "Lab Training\/ Theory Project ",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Chemistry"
+    },
+    {
+      "Code": "MTH310",
+      "Name": "Group Theory",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH311",
+      "Name": "Analysis",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH312",
+      "Name": "Point Set Topology",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH318",
+      "Name": "Combinatorics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH314",
+      "Name": "Statistical Inference",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH310",
+      "Name": "Group Theory",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH311",
+      "Name": "Analysis",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH312",
+      "Name": "Point Set Topology",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH318",
+      "Name": "Combinatorics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH314",
+      "Name": "Statistical Inference",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH417",
+      "Name": "Ordinary Differential Equations",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH334",
+      "Name": "Topics in Applicable Mathematics: Numerical Analysis",
+      "Credit": "3",
+      "Semister": "V\/VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH431",
+      "Name": "Topics in Analysis: Several Complex Variables",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH301",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "MTH401",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Mathematics"
+    },
+    {
+      "Code": "PHY310",
+      "Name": "Mathematical Methods in Physics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY311",
+      "Name": "Classical Mechanics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY312",
+      "Name": "Electrodynamics",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY313",
+      "Name": "Quantum Mechanics I",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY310",
+      "Name": "Mathematical Methods in Physics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY311",
+      "Name": "Classical Mechanics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY312",
+      "Name": "Electrodynamics",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY313",
+      "Name": "Quantum Mechanics I",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY301",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY330",
+      "Name": "Physics Lab IV",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY335",
+      "Name": "Electronics I",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY340",
+      "Name": "Methods of Experimental Physics",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY335",
+      "Name": "Electronics I",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY340",
+      "Name": "Methods of Experimental Physics",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY410",
+      "Name": "Physics Lab VI",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY411",
+      "Name": "Statistical Mechanics II",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY412",
+      "Name": "Condensed Matter Physics I",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY401",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY452",
+      "Name": "Fluid Dynamics",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY452",
+      "Name": "Fluid Dynamics",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY453",
+      "Name": "Computational Physics",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "PHY465",
+      "Name": "Physics of Soft Matter",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Physics"
+    },
+    {
+      "Code": "ECS313",
+      "Name": "Palaeobiology",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Earth and Climate Science"
+    },
+    {
+      "Code": "ECS312",
+      "Name": "Isotope Geochemistry",
+      "Credit": "4",
+      "Semister": "V",
+      "Subject": "Earth and Climate Science"
+    },
+    {
+      "Code": "ECS313",
+      "Name": "Palaeobiology",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Earth and Climate Science"
+    },
+    {
+      "Code": "ECS312",
+      "Name": "Isotope Geochemistry",
+      "Credit": "4",
+      "Semister": "VII",
+      "Subject": "Earth and Climate Science"
+    },
+    {
+      "Code": "HSS301",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "V",
+      "Subject": "Humanities and Social Sciences"
+    },
+    {
+      "Code": "HSS401",
+      "Name": "Lab Training\/Theory Project",
+      "Credit": "3",
+      "Semister": "VII",
+      "Subject": "Humanities and Social Sciences"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0091EA"
+    android:orientation="vertical"
+   >
+
+
+    <ImageView
+        android:layout_width="@dimen/center_img_width"
+        android:layout_height="@dimen/center_img_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/center_img_bottom_margin"
+        android:layout_marginTop="@dimen/center_img_top_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iiser_logo" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        style="@style/Login_edittext"
+        android:hint="@string/edtxt_hint_username" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        style="@style/Login_edittext"
+        android:hint="@string/edtxt_hint_password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chkbx_remembr_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edittxt_marginBottom"
+            android:layout_marginLeft="@dimen/edittxt_marginLeft"
+
+            android:text="@string/txt_remember_me"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="@dimen/edittxt_textsize"
+            />
+<!--
+        <TextView
+            android:id="@+id/txt_remember_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="@string/txt_remember_me"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="@dimen/edittxt_textsize" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edittxt_marginLeft"
+        android:layout_marginRight="@dimen/edittxt_marginLeft"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/center_img_bottom_margin">
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="@string/txt_forgot_password"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="@dimen/edittxt_textsize" />
+
+        <TextView
+            android:id="@+id/txt_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/txt_marginLeft"
+            android:text="@string/txt_slash"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="@dimen/edittxt_textsize" />
+
+        <TextView
+            android:id="@+id/txt_new_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/txt_marginLeft"
+            android:text="@string/txt_new_login"
+            android:textColor="@color/edittext_textcolor"
+            android:textSize="@dimen/edittxt_textsize" />
+
+    </LinearLayout>
+</LinearLayout>
